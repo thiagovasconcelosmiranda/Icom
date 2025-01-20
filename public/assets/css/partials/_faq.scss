@@ -1,0 +1,196 @@
+.row-i-14 {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .col-13-i {
+        width: 100%;
+        height: 310px;
+        background-color: rgb(76, 45, 212);
+        border-top-left-radius: 300px;
+        border-bottom-left-radius: 300px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        transition: all 2s;
+        margin-top: 20px;
+        margin-left: 100%;
+
+        .circle-img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.8s;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .text-i-6 {
+            width: 100%;
+            padding: 10px 0;
+
+            h1 {
+                color: rgb(243, 243, 31);
+            }
+
+            p {
+                color: #fff;
+            }
+        }
+
+    }
+
+    .col-14-i {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 30px;
+
+        .i-button {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 30px;
+            gap: 20px;
+
+            .button {
+                width: 500px;
+                padding: 20px 10px;
+                background-color: transparent;
+                border-radius: 50px;
+                border: 1px solid blue;
+                color: blue;
+                cursor: pointer;
+            }
+
+            .active-button {
+                background-color: blue;
+                color: #fff;
+            }
+        }
+
+        .i-client-x {
+            width: 80%;
+            margin: auto;
+            margin-bottom: 30px;
+            display: none;
+
+            .i-text-1 {
+                h3 {
+                    color: blue;
+                }
+
+                p {
+                    color: #2f2e2e;
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .clientVisible {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.row-i-15 {
+    width: 100%;
+    height: auto;
+    background-color: rgb(18, 18, 179);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .form-title {
+        padding: 20px 0;
+
+        p {
+            color: #fff;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 200;
+        }
+
+        h1 {
+            color: rgb(243, 243, 31);
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+
+    .contact-col {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .row-i-14 {
+        height: 70vh;
+        padding-bottom: 150px;
+
+        .col-13-i {
+            height: auto;
+            flex-direction: column;
+            border-radius: 0;
+            padding: 10px 0;
+            transition: none;
+
+            .circle-img {
+                width: 200px;
+                height: 200px;
+                transition: none;
+            }
+
+            .text-i-6 {
+                width: 100%;
+
+                h1 {
+                    text-align: center;
+                    color: rgb(243, 243, 31);
+                }
+
+                p {
+                    width: 100%;
+                    color: #fff;
+                }
+            }
+        }
+
+        .col-14-i {
+            .i-button {
+                .button {
+                    width: 90%;
+                    padding: 15px;
+                }
+            }
+        }
+    }
+
+    .row-i-15 .contact-col {
+        width: 100%;
+        display: flex;
+    }
+}

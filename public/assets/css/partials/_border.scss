@@ -1,0 +1,10 @@
+.border-align{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: end;
+    z-index: 60;
+    img{
+      width: 100%;
+    }
+}

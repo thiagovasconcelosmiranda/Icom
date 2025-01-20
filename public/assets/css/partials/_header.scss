@@ -1,0 +1,361 @@
+ul {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 99;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 2px #eeecec;
+    transition: 0.8s;
+
+    .navbar-group {
+        width: 90%;
+        height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+
+        .navbar-i {
+            display: flex;
+            height: auto;
+            overflow: hidden;
+
+            li {
+                margin: 20px;
+
+                a {
+                    color: #000;
+                }
+
+                a:hover {
+                    color: #858080;
+                }
+
+                .active {
+                    color: #3981bb;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+
+.img-logo {
+    width: 80px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-logo img {
+    height: 40px;
+}
+
+.option {
+    width: auto;
+    height: auto;
+    display: none;
+    cursor: pointer;
+}
+
+.option img {
+    height: 30px;
+    cursor: pointer;
+}
+
+.header-container {
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+}
+
+.header-row {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-col {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .button-left-header,
+    .button-right-header {
+        position: absolute;
+        opacity: 0;
+        top: 50%;
+        transition: all 0.5s;
+
+        i {
+            font-size: 35px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+    }
+
+    .button-left-header {
+        left: 10px;
+    }
+
+    .button-right-header {
+        right: 10px;
+    }
+}
+
+.carousel:hover .button-left-header,
+.carousel:hover .button-right-header {
+    opacity: 1;
+}
+
+.carousel .carousel-items {
+    width: calc(100vw * 4);
+    height: inherit;
+    display: flex;
+    align-items: center;
+    // transition: 2s;
+    gap: 10px;
+}
+
+.carousel-item {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.carousel-item .carousel-i {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+}
+
+.carousel-i h1 {
+    width: 100%;
+    color: #fff;
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+.carousel-i-text {
+    width: 42%;
+    color: #fff;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.i-button {
+    width: 100%;
+    padding: 15px 0;
+
+    .button-header-slide {
+        width: auto;
+        padding: 15px 30px;
+        border-radius: 50px;
+        font-size: 20px;
+        color: #fff;
+        background-color: #60D394;
+        border: 0;
+        outline: 0;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 2s;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        i {
+            display: none;
+            font-size: 12px;
+            color: #fff;
+        }
+    }
+
+    .button-header-slide:hover {
+        background-color: #14b9b1;
+    }
+
+    .button-header-slide:hover i {
+        display: inline;
+    }
+}
+
+
+.circles {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: 90%;
+    display: flex;
+    justify-content: center;
+
+    .circle {
+        width: 8px;
+        height: 8px;
+        background-color: rgb(147, 12, 215);
+        margin-left: 8px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .circleActive {
+        background-color: rgb(89, 33, 117);
+    }
+
+}
+
+.header-col .ed_pd_row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.header-col .column {
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.ed_pd_row .ed_pd_column_blue {
+    width: 180px;
+    height: 80%;
+    background-color: rgb(12, 151, 238);
+
+    .ed_pd_circle_img {
+        width: 100%;
+        height: 0;
+        padding-bottom: 100%;
+        -moz-border-radius: 100%;
+        -webkit-border-radius: 100%;
+        border-radius: 100%;
+        margin-top: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        transition: all 2s;
+        box-shadow: 0 0 10px 10px #0000;
+        background-image: url('../images/image2.jpg');
+        background-size: cover;
+        box-shadow: 0 0 30px 5px rgb(12, 136, 213);
+    }
+}
+
+.ed_pd_row .ed_pd_column_yellow {
+    width: 180px;
+    height: 95%;
+    background-color: rgb(246, 230, 12);
+    right: 0;
+
+    .ed_pd_circle_yellow {
+        width: 100%;
+        height: 0;
+        padding-bottom: 100%;
+        -moz-border-radius: 100%;
+        -webkit-border-radius: 100%;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 2s;
+        background-image: url('../images/image-icom.jpg');
+        background-size: cover;
+    }
+}
+
+.ed_pd_row .ed_pd_column_rose {
+    width: 100px;
+    height: 45%;
+    background-color: rgb(229, 54, 106);
+    margin-top: 35%;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+
+    .ed_pd_circle {
+        width: 100%;
+        height: 0;
+        padding-bottom: 100%;
+        -webkit-border-radius: 100%;
+        border-radius: 100%;
+        background-color: #fff;
+        transition: all 2s;
+        margin-top: 60%;
+    }
+}
+
+
+@media (max-width: 700px) {
+    ul .navbar-group {
+        padding: 0 20px;
+        justify-content: space-between;
+
+        .navbar-i {
+            display: none;
+        }
+
+        .navbar-i.navbar-vision {
+            width: 90%;
+            height: auto;
+            display: block;
+            position: absolute;
+            z-index: 99;
+            top: 100%;
+            right: 0;
+            left: 0;
+            margin: auto;
+            padding-left: 20px;
+            background-color: #fff;
+
+            li {
+                padding: 10px 0;
+            }
+        }
+
+        .option {
+            display: flex;
+        }
+    }
+
+    .header-row {
+        flex-direction: column;
+        margin-top: 20%;
+
+        .header-col {
+            height: auto;
+
+            .ed_pd_row {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                display: none;
+
+            }
+
+            .carousel-i-text {
+                width: 90%;
+            }
+        }
+
+    }
+
+
+}

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none
+}
+
+p {
+    color: #fff;
+}
+
+.white {
+    color: #fff;
+}
+body {
+    background-color: rgb(75, 99, 234);
+}
+
+
+@import 'partials/header';
+@import 'partials/border';
+@import 'partials/home';
+@import 'partials/about';
+@import 'partials/blog';
+@import 'partials/form';
+@import 'partials/contact';
+@import 'partials/social';
+@import 'partials/privacy';
+@import 'partials/faq';
+@import 'partials/serviceCart';
+@import 'partials/cookies';
+@import 'partials/digital';
+@import 'partials/footer';

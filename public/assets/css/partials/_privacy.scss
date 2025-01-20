@@ -1,0 +1,23 @@
+.container-x-10{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding-top: 10%;
+    padding-bottom: 20px;
+
+    .col-x-13{
+        width: 80%;
+        margin: auto;
+        h3{
+            padding: 10px 0;
+            color: #353535;
+        }
+
+        p{
+            color: #000;
+            font-weight: 200;
+            margin-top: 10px;
+        }
+
+    }
+}

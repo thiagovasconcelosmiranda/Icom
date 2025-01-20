@@ -1,0 +1,27 @@
+{
+  "name": "node-icon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -e ts,json,mustache src/server.ts",
+    "vercel-build": "npx prisma migrate dev deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.1.0",
+    "@types/express": "^5.0.0",
+    "@types/mustache": "^4.2.5",
+    "@types/mustache-express": "^1.2.5",
+    "@types/node": "^22.10.2",
+    "express": "^4.21.2",
+    "mustache": "^4.2.0",
+    "mustache-express": "^1.3.2",
+    "prisma": "^6.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}

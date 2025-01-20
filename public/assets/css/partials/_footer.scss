@@ -1,0 +1,44 @@
+
+footer {
+    width: 100%;
+    height: auto;
+}
+
+footer .footer-row {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.contact-col {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contact-col .contact-map {
+    width: 80%;
+    height: 400px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    overflow: hidden;
+}
+
+.contact-map iframe {
+    border-radius: 0;
+    height: 100%;
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+   footer .footer-row{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+    footer .footer-row{
+        flex-direction: column;
+    } 
+}

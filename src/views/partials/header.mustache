@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/logo-tipo2.png" type="image/png">
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <!--JS-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="/assets/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>{{title}}</title>
+  </head>
+   <body>
+      <ul id="navbar">
+         <div class="navbar-group">
+              <div class="img-logo">
+            <img src="/assets/images/logo-tipo.png" alt="logo.jpg"/>
+        </div>
+        <div class="navbar-i">
+          <li><a 
+          {{#home}}
+             class="active"
+          {{/home}}
+           href="/">Home</a></li>
+          <li><a
+          {{#about}}
+             class="active"
+          {{/about}}
+           href="/sobre">Sobre o ICON</a></li>
+          
+          <li><a 
+            {{#blog}}
+              class="active"
+             {{/blog}}
+           href="/blog">Blog</a></li>
+          <li><a 
+          {{#faq}}
+            class="active"
+            {{/faq}}
+          href="/faq">FAQ</a></li>
+          
+          <li><a
+           {{#contact}}
+             class="active"
+            {{/contact}}
+            href="/contato">Contato</a></li>
+          <li><a 
+          {{#privacy}}
+             class="active"
+            {{/privacy}}
+          href="/privacidade">Privacidade</a></li>
+        </div>
+        <div class="option" id="option">
+        <img src="/assets/images/icons8-cardápio-50.png">
+        </div> 
+         </div>
+      </ul>
+
+ 
+
