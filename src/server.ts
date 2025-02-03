@@ -7,7 +7,6 @@ import * as error from './controllers/errorController';
 const app = express();
 
 app.use(express.urlencoded({extended: false}));
-app.set('view engine', 'mustache');
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.json());
 app.set('view engine', 'mustache');

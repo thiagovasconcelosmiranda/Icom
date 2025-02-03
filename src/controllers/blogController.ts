@@ -5,9 +5,9 @@ import { prisma } from "../utils/prisma";
 export const create = async () => {
      await prisma.blog.create({
         data: {
-            imagem: 'images-empresa.jpg',
-            titulo: 'Central de Libras do  Governo do Distrito Federal – GDF',
-            descricao: 'Ajuste-se à nova regulamentação com o SAC Libras',
+            imagem: 'image-icom2.jpg',
+            titulo: 'Decreto SAC: sua empresa precisa se adaptar agora mesmo',
+            descricao: 'O Decreto SAC é uma medida que tem o objetivo de regular as empresas de atendimento ao cliente. Quer saber mais? Então confira.',
             data: '20/01/2025'
         }
      });
